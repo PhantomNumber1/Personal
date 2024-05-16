@@ -1,0 +1,49 @@
+    .popup {
+        width: 800px;
+        height: 600px;
+        background-color: #D3D3D3;
+        border-radius: 25px;
+        display: flex;
+        position: fixed; /* Fixed position to keep it centered */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust to center */
+        border:5px solid black;
+        animation: fadeIn 0.8s ease forwards;
+        flex-direction: column;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0; /* Start with opacity set to 0 */
+        }
+        to {
+            opacity: 1; /* Fade in by setting opacity to 1 */
+        }
+    }
+
+    .taskInput {
+        width: 200px;
+        height: 30px; 
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .descInput {
+    width: 700px;
+    height: 300px; 
+    margin-left: 20px;
+    margin-top: 30px;
+    padding-top: 5px;
+    text-align: left;
+    }
+
+    .heading {
+        font-size: 2em; /* Adjust the font size as needed */
+        font-weight: bold; /* Adjust the font weight as needed */
+        text-align: center;
+    }
+
+    .descInput::placeholder {
+        text-align: center; /* Center the placeholder text horizontally */
+        color: gray; /* Set the color of the placeholder text */
+    }
