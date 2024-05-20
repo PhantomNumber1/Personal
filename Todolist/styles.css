@@ -1,49 +1,83 @@
-    .popup {
-        width: 800px;
-        height: 600px;
-        background-color: #D3D3D3;
-        border-radius: 25px;
-        display: flex;
-        position: fixed; /* Fixed position to keep it centered */
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Adjust to center */
-        border:5px solid black;
-        animation: fadeIn 0.8s ease forwards;
-        flex-direction: column;
-    }
+.popup {
+    width: 800px;
+    height: 600px;
+    background-color: #D3D3D3;
+    border-radius: 25px;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: fadeIn 0.8s ease forwards;
+}
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0; /* Start with opacity set to 0 */
-        }
-        to {
-            opacity: 1; /* Fade in by setting opacity to 1 */
-        }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
+    to {
+        opacity: 1;
+    }
+}
 
-    .taskInput {
-        width: 200px;
-        height: 30px; 
-        margin-left: 20px;
-        margin-top: 30px;
+@keyframes fadeOut {
+    from {
+        opacity: 1;
     }
-    .descInput {
-    width: 700px;
-    height: 300px; 
-    margin-left: 20px;
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.8s ease forwards;
+}
+
+.label {
+    margin-right: 5px;
+    margin-left: 30px;
     margin-top: 30px;
-    padding-top: 5px;
-    text-align: left;
-    }
+}
 
-    .heading {
-        font-size: 2em; /* Adjust the font size as needed */
-        font-weight: bold; /* Adjust the font weight as needed */
-        text-align: center;
-    }
+.input {
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+}
 
-    .descInput::placeholder {
-        text-align: center; /* Center the placeholder text horizontally */
-        color: gray; /* Set the color of the placeholder text */
-    }
+.emptyDiv {
+    width: 200px;
+}
+
+.descInput {
+    width: 670px;
+    height: 200px;
+    resize: none;
+}
+
+.heading {
+    height: 100px;
+    width: 800px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+}
+
+.input::placeholder {
+    text-align: center;
+}
+
+.buttons {
+    margin-left: 20px;
+    height: 30px;
+    width: 100px;
+}
+
