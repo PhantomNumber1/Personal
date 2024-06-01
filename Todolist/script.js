@@ -28,7 +28,7 @@ function addOnScreen() {
     }
 
     let taskDiv = document.createElement("div");
-    let task = dcoument.createElement("h1");
+    let task = document.createElement("h1");
     task.innerText += taskName;
     taskDiv.appendChild(task);
     document.body.appendChild(taskDiv);
